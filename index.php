@@ -8,7 +8,7 @@ $last_word = $matches[0];
 
 echo $last_word;
   
-$con = mysql_connect("127.0.0.1","root","e88f66be56f0c56a");
+$con = mysql_connect("127.0.0.1","root","9ee0f1cdb45ffeeb");
 if (!$con)
   {
   die('Could not connect: ' . mysql_error());

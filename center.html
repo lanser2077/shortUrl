@@ -2,34 +2,35 @@
 <head>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8">
 	<title>生成短连接</title>
-	<script type="text/javascript">
-	function makeastring(j){
-     	var list = new Array("a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0");
-     	console.log(list)
-     	for (i = 0; i < list.length; i++) { 
-		    if(i==j){
-		    	return list[i];
-		    }
-		 }
-     }
-     function makea(){
-     	var ipt1 = document.getElementById("ipt1");
-     	var stringline = "";
+	<!--<script type="text/javascript">-->
+	
+	<!--function makeastring(j){-->
+ <!--    	var list = new Array("a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","1","2","3","4","5","6","7","8","9","0");-->
+ <!--    	console.log(list)-->
+ <!--    	for (i = 0; i < list.length; i++) { -->
+	<!--	    if(i==j){-->
+	<!--	    	return list[i];-->
+	<!--	    }-->
+	<!--	 }-->
+ <!--    }-->
+ <!--    function makea(){-->
+ <!--    	var ipt1 = document.getElementById("ipt1");-->
+ <!--    	var stringline = "";-->
      	
-     	for (var i = 0; i <= 5; i++) {
-     		var j = Math.ceil(Math.random()*62);
-     		stringline = stringline + makeastring(j-1);
-     	}
-     	ipt1.value = stringline;
-     }
+ <!--    	for (var i = 0; i <= 5; i++) {-->
+ <!--    		var j = Math.ceil(Math.random()*62);-->
+ <!--    		stringline = stringline + makeastring(j-1);-->
+ <!--    	}-->
+ <!--    	ipt1.value = stringline;-->
+ <!--    }-->
 
-    </script>
+ <!--   </script>-->
 </head>
 <body>
 <form method="post" action="add.php">
 	<div style="text-align: center;">
-		随机码:<input type="text" id="ipt1" name="keyword" /><br/><br/>
-		<input type="button" id="btn1" name="make" value="生成" onclick="makea()"><br/><br/>
+		<br/><br/>
+		<br/><br/>
 		
 		长链接:<input type="text" name="link" /><br/><br/>
 		<input type="submit">
